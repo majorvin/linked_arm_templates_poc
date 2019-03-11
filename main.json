@@ -11,7 +11,7 @@
       }
     },
     "variables": {
-      "storageAccountName": "majorstorage"
+      "storageAccountName": "majorstorage-linked"
     },
     "resources": [
       {
