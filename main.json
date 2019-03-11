@@ -17,7 +17,7 @@
         "apiVersion": "2018-05-01",
         "tags": {
           "Environment": "Development"
-        }
+        },
         "properties": {
             "mode": "Incremental",
             "templateLink": {
