@@ -10,9 +10,6 @@
         }
       }
     },
-    "variables": {
-      "storageAccountName": "majorstorage-linked"
-    },
     "resources": [
       {
         "name": "linkedTemplate",
@@ -24,7 +21,7 @@
                 "uri":"https://raw.githubusercontent.com/majorvin/linked_arm_templates_poc/master/linked.json"
             },
             "parameters": {
-                "storageAccountName":{"value": "[variables('storageAccountName')]"},
+                "storageAccountName":{"value": "majorstorage-linked"},
                 "location":{"value": "[parameters('location')]"}
             }
         }
