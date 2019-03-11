@@ -21,7 +21,7 @@
                 "uri":"https://raw.githubusercontent.com/majorvin/linked_arm_templates_poc/master/linked.json"
             },
             "parameters": {
-                "storageAccountName":{"value": "majorstorage-linked"},
+                "storageAccountName":{"value": "majorstoragelinked"},
                 "location":{"value": "[parameters('location')]"}
             }
         }
