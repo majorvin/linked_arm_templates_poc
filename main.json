@@ -136,7 +136,7 @@
         "location": "[parameters('location')]",
         "apiVersion": "2018-10-01",
         "dependsOn": [
-          "[resourceId('Microsoft.Storage/storageAccounts/', variables('storageAccountName'))]",
+          "linkedTemplate",
           "[resourceId('Microsoft.Network/networkInterfaces/', variables('nicName'))]"
         ],
         "properties": {
@@ -176,7 +176,7 @@
           "diagnosticsProfile": {
             "bootDiagnostics": {
               "enabled": true,
-              "storageUri": "[reference(resourceId('Microsoft.Storage/storageAccounts/', variables('storageAccountName'))).primaryEndpoints.blob]"
+              "storageUri": "[reference('linkedTemplate').outputs.storageUri.value]"
             }
           }
         }
